@@ -14,9 +14,8 @@ Summary: Functions to compute quasi variances and associated measures of approxi
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-qvcalc-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-qvcalc-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-qvcalc-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-qvcalc-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-qvcalc-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-qvcalc-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-qvcalc-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-qvcalc-feedstock)
 
 Current release info
 ====================
