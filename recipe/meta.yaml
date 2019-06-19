@@ -1,4 +1,4 @@
-{% set version = '0.9-1' %}
+{% set version = '1.0.0' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -7,16 +7,15 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: qvcalc_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/qvcalc_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/qvcalc/qvcalc_{{ version }}.tar.gz
-  sha256: de2311ade76dae311b2b5632633003667aa46cdb8703a330b84b67c4b90f87d2
+  sha256: 6c3f59dd019c9cf749b0f85db84e7bcf6ef65526171e95d2945bebbf41e71ef5
 
 build:
-  noarch: generic
   merge_build_host: True  # [win]
-  number: 1001
+  number: 0
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -35,17 +34,29 @@ test:
     - "\"%R%\" -e \"library('qvcalc')\""  # [win]
 
 about:
-  home: https://github.com/DavidFirth/qvcalc
+  home: https://davidfirth.github.io/qvcalc
   license: GPL-2 | GPL-3
   summary: Functions to compute quasi variances and associated measures of approximation error.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
+    - conda-forge/r
+
+# Package: qvcalc
+# Version: 1.0.0
+# Date: 2019-05-09
+# Title: Quasi Variances for Factor Effects in Statistical Models
+# Author: David Firth
+# Maintainer: David Firth <d.firth@warwick.ac.uk>
+# URL: https://davidfirth.github.io/qvcalc
+# Description: Functions to compute quasi variances and associated measures of approximation error.
+# Suggests: relimp, MASS, pkgdown
+# Enhances: psychotools
+# License: GPL-2 | GPL-3
+# RoxygenNote: 6.1.1
+# NeedsCompilation: no
+# Packaged: 2019-05-09 20:26:29 UTC; david
+# Repository: CRAN
+# Date/Publication: 2019-05-09 21:30:04 UTC
