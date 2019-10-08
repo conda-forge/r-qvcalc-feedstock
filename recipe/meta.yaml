@@ -1,4 +1,4 @@
-{% set version = '1.0.0' %}
+{% set version = "1.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/qvcalc_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/qvcalc/qvcalc_{{ version }}.tar.gz
-  sha256: 6c3f59dd019c9cf749b0f85db84e7bcf6ef65526171e95d2945bebbf41e71ef5
+  sha256: f3548a34ba953a28b7cad0e850fe941d3075292dccd7c4e1cf4c736777fc25f3
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
