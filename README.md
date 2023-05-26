@@ -1,11 +1,11 @@
-About r-qvcalc
-==============
+About r-qvcalc-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-qvcalc-feedstock/blob/main/LICENSE.txt)
 
 Home: https://davidfirth.github.io/qvcalc
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-qvcalc-feedstock/blob/main/LICENSE.txt)
 
 Summary: Functions to compute quasi variances and associated measures of approximation error.
 
