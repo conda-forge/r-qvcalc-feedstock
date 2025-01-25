@@ -1,4 +1,4 @@
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/qvcalc_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/qvcalc/qvcalc_{{ version }}.tar.gz
-  sha256: 8a9e0fa0719dc40c0857de97f6bd322754e2bac4bb6bb4c095c547064020599f
+  sha256: 90403cada56e82a6bbd067f397fab20c721850b50874345a6322619165dafb59
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
